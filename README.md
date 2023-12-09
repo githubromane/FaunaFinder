@@ -26,7 +26,7 @@ $ pip install virtualenv
 $ virtualenv env
 ```
 
-3. Then run the command:
+3. Then run the command (on Windows):
 ```
 $ .\env\Scripts\activate
 ```
