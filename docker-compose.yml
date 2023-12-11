@@ -1,11 +1,29 @@
 version: '3'
 
 services:
-  web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "5000:5000"
+  # Flask web application
+  backend:
+    build: .
+    container_name: my_flask_app
+    command: ["python", "app.py"]
     volumes:
       - .:/app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      - FLASK_DB_URI=sqlite:///test.db
+      - FLASK_DEBUG=True
+
+  # SQLite database
+  db:
+    image: alpine
+    container_name: my_sqlite_db
+    volumes:
+      - sqlite_data:/app
+    command: ["echo", "SQLite database for Flask application"]
+
+volumes:
+  sqlite_data:
+
