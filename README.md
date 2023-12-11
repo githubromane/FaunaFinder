@@ -5,15 +5,6 @@ Our site is a simple online Christmas list where you can add, delete or modify a
 
 ## How To Run
 
-### With Docker compose
-
-1. Verify that you have Docker on your laptop.
-
-2. Open a terminal in your project directory and run the command : 
-```
-docker-compose up
-```
-
 ### Without Docker
 
 1. Install `virtualenv`:
@@ -42,6 +33,15 @@ $ (env) python app.py
 ```
 
 This server will start on port 5000 by default. You can change this in the file `app.py`.
+
+### With Docker compose
+
+1. Verify that you have Docker on your laptop.
+
+2. Open a terminal in your project directory and run the command : 
+```
+docker-compose up
+```
 
 
 
