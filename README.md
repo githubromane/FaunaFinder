@@ -1,4 +1,5 @@
 # SantaWishList
+### by Romane Guyonnet and Clément Debrosse
 
 This project was very rewarding, both for its completeness and for the application of the theoretical knowledge acquired in the Machine Learning in Production course. We think that these uses will be very useful for our future jobs.
 Our site is a simple online Christmas list where you can add, delete or modify a gift.
