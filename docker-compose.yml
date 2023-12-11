@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  # Flask web application
+  # Flask web application 
   backend:
     build: .
     container_name: my_flask_app
